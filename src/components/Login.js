@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const Login = () => {
+
+  const [username, setUsername] = useState('Rumesh');
+
+
     return (
         <>
           <LoginContainer>
@@ -40,21 +45,43 @@ overflow: hidden;
   const LoginForm = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     padding: 50px;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 350px;
   margin-top: 200px;
   margin-left: 500px;
-  height: 300px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 
   h1{
-    font-size: 24px;
+    font-size: 2rem;
   font-weight: bold;
   margin-bottom: 40px;
+  color: #004080;
+  }
+
+  input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    border-bottom: 1px solid #004080;
+    outline: none;
+    background-color: #f1f1f1;
+    transition: border 0.3s;
+  }
+  
+  a{
+  }
+  a:hover{
+    color: #004080;
+    text-decoration: underline;
+
   }
 
   `;
